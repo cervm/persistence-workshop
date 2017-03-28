@@ -23,63 +23,31 @@ public class Product{
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public int getMinStock() {
         return minStock;
-    }
-
-    public void setMinStock(int minStock) {
-        this.minStock = minStock;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getCountryOrigin() {
         return countryOrigin;
-    }
-
-    public void setCountryOrigin(String countryOrigin) {
-        this.countryOrigin = countryOrigin;
     }
 
     public String getDescription() {
         return description;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public double getCostPrice() {
         return costPrice;
-    }
-
-    public void setCostPrice(double costPrice) {
-        this.costPrice = costPrice;
     }
 
     public double getSalesPrice() {
         return salesPrice;
     }
 
-    public void setSalesPrice(double salesPrice) {
-        this.salesPrice = salesPrice;
-    }
-
     public double getRentPrice() {
         return rentPrice;
-    }
-
-    public void setRentPrice(double rentPrice) {
-        this.rentPrice = rentPrice;
     }
 }

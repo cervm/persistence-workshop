@@ -25,47 +25,23 @@ public class Order {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public int getInvoiceId() {
         return invoiceId;
-    }
-
-    public void setInvoiceId(int invoiceId) {
-        this.invoiceId = invoiceId;
     }
 
     public Date getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(Date orderDate) {
-        this.orderDate = orderDate;
-    }
-
     public Date getDeliveryDate() {
         return deliveryDate;
-    }
-
-    public void setDeliveryDate(Date deliveryDate) {
-        this.deliveryDate = deliveryDate;
     }
 
     public double getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
-        this.amount = amount;
-    }
-
-    public boolean isDeliveryStatus() {
+    public boolean getDeliveryStatus() {
         return deliveryStatus;
-    }
-
-    public void setDeliveryStatus(boolean deliveryStatus) {
-        this.deliveryStatus = deliveryStatus;
     }
 }

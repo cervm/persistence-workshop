@@ -25,24 +25,12 @@ public class Invoice {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public Date getPaymentDate() {
         return paymentDate;
     }
 
-    public void setPaymentDate(Date paymentDate) {
-        this.paymentDate = paymentDate;
-    }
-
     public double getAmount() {
         return amount;
-    }
-
-    public void setAmount(double amount) {
-        this.amount = amount;
     }
 
     public void addOrder(int orderId) {
