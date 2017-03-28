@@ -35,3 +35,4 @@ public class Invoices implements IDataAccessObject<Invoice> {
     public void delete(Invoice object) {
         //TODO: to be implemented
     }
+}
