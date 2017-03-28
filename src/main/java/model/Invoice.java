@@ -2,7 +2,6 @@ package model;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Iterator;
 
 /**
  * Created by Ondřej Soukup on 28.03.2017.
@@ -38,12 +37,7 @@ public class Invoice {
     }
 
     public void deleteOrder(int orderId) {
-        Iterator i = orders.iterator();
-        while(i.hasNext()){
-            if((int)i.next() == orderId){
-                i.remove();
-            }
-        }
+        orders.removeIf(o -> (int) o == orderId);
     }
 
 }
