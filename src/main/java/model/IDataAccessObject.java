@@ -1,15 +1,14 @@
 package model;
 
-import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by rajmu on 17.03.28.
  */
-public interface IDataAccessObject<T, U extends Serializable> {
+public interface IDataAccessObject<T> {
     public List<T> getAll();
 
-    public T getById(U id);
+    public T getById(int id);
 
     public void create(T object);
 
