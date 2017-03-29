@@ -1,8 +1,11 @@
 package model.connection;
 
 import javafx.scene.control.TextField;
+import jdk.nashorn.internal.parser.JSONParser;
 import model.exception.ConnectionException;
+import org.json.*;
 
+import java.io.FileReader;
 import java.sql.*;
 import java.util.prefs.Preferences;
 
@@ -18,6 +21,22 @@ public class DBConnect {
 
     public DBConnect() {
         //TODO: retrieve data from JSON fole
+        try {
+            String file = "data.json";
+            FileReader fileReader = new FileReader(file);
+            //JSONObject jsonObject = (JSONObject) new JSONParser().parse(fileReader);
+            JSONObject jsonObject = new JSONObject(fileReader);
+            JSONArray dbArray = jsonObject.getJSONArray("database");
+            url = dbArray.getString(0);
+            username = dbArray.getString(1);
+            password = dbArray.getString(2);
+            System.out.println("URL: " + url + '\n' +
+                               "User: " + username + '\n' +
+                               "Password" + password);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
     /***
