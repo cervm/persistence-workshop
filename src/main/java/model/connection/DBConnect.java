@@ -1,18 +1,11 @@
 package model.connection;
 
-import javafx.fxml.Initializable;
-import javafx.scene.control.Alert;
 import javafx.scene.control.TextField;
 import model.exception.ConnectionException;
 
-import java.net.URL;
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.ResourceBundle;
 import java.util.prefs.Preferences;
 
-import static javafx.scene.control.Alert.*;
-import static javafx.scene.control.Alert.AlertType.*;
 
 /**
  * Created by Domestos Maximus on 24-Nov-16.
@@ -22,13 +15,9 @@ public class DBConnect {
     private static String url;
     private static String username;
     private static String password;
-    private Preferences reg;
 
     public DBConnect() {
-        reg = Preferences.userRoot();
-        url = reg.get("DATABASE_HOSTNAME", "");
-        username = reg.get("DATABASE_USER", "");
-        password = reg.get("DATABASE_PASS", "");
+        //TODO: retrieve data from JSON fole
     }
 
     /***
