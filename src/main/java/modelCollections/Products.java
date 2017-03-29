@@ -1,6 +1,6 @@
 package modelCollections;
 
-import model.IDataAccessObject;
+import model.connection.IDataAccessObject;
 import model.Product;
 
 import java.util.List;
