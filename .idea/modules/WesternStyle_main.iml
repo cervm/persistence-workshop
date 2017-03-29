@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module external.linked.project.id="WesternStyle:main" external.linked.project.path="$MODULE_DIR$/../.." external.root.project.path="$MODULE_DIR$/../.." external.system.id="GRADLE" external.system.module.group="com.teamSuperior" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
     <output url="file://$MODULE_DIR$/../../build/classes/main" />
     <exclude-output />
     <content url="file://$MODULE_DIR$/../../src/main">
@@ -10,6 +10,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Gradle: com.microsoft.sqlserver:mssql-jdbc:6.1.0.jre8" level="project" />
+    <orderEntry type="library" name="Gradle: com.jfoenix:jfoenix:1.2.0" level="project" />
     <orderEntry type="library" name="Gradle: com.microsoft.azure:azure-keyvault:0.9.3" level="project" />
     <orderEntry type="library" name="Gradle: com.microsoft.azure:azure-core:0.9.3" level="project" />
     <orderEntry type="library" name="Gradle: org.apache.httpcomponents:httpclient:4.3.6" level="project" />
