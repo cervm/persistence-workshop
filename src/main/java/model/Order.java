@@ -1,8 +1,5 @@
 package model;
 
-import javafx.collections.ObservableList;
-
-import java.util.ArrayList;
 import java.util.Date;
 
 /**
